@@ -22,10 +22,10 @@ const changePage = ref(0)
     <button @click="changePage = 0">TicTacToe</button>
     <button @click="changePage = 1">Shopping List</button>
   </div>
-  <div v-if="changePage === 0"> 
+  <div v-if="changePage === 1"> 
     <Tictactoe />
   </div>
-  <div v-if="changePage === 1">
+  <div v-if="changePage === 0">
     <ShoppingList/>
   </div>
 </template>
